@@ -55,7 +55,6 @@ def SCF(iters=100, tol=10e-6):
     V=h2e.copy()
     F = H + get_J(gamma,V) -get_K(gamma,V)
     E, C = scipy.linalg.eigh(F,S)
-    return E,C
 
     
-print(SCF())
+# print(SCF())
